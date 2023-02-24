@@ -18,9 +18,8 @@ I will use cifar100 dataset from torchvision.
 
 ### 2. train teacher network
 ```bash
-$ python train.py 
+$ python train.py # Defult=vgg16
 ```
-% Defult: vgg16
 
 Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM).
 
