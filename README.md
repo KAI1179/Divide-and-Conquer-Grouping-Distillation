@@ -1,8 +1,5 @@
 # Divide-and-Conquer-Grouping-Distillation
 This is a simple implementation of DCGD.
-# Pytorch-cifar100
-
-practice on cifar100 using pytorch
 
 ## Requirements
 
