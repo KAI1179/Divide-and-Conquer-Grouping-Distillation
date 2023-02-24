@@ -21,7 +21,7 @@ I will use cifar100 dataset from torchvision.
 $ python train.py 
 ```
 Defult is vgg16.
-Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM). Then unzip it to /checkpoint
+Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM). Then unzip it to ```/checkpoint```
 
 ### 3. calculate MED matrix
 You need to calculate MED matrix by 
@@ -30,7 +30,7 @@ You need to calculate MED matrix by
 $ python correct_test.py
 ```
 
-Or you can use the file /result/correct_test_vgg16.mat provided in advance.
+Or you can use the file ```/result/correct_test_vgg16.mat``` provided in advance.
 
 ### 4. construct student model according to MED matrix
 
@@ -46,7 +46,7 @@ If you use another network (MED matrix), you need to change the file path loaded
 $ python vg16_r20_train.py 
 ```
 
-We provide two implementations in the file, DCGD+CE and DCGD+KD. 
+We provide two implementations in the file, ```DCGD+CE``` and ```DCGD+KD```. 
 
 
 #
