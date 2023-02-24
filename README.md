@@ -18,10 +18,10 @@ I will use cifar100 dataset from torchvision.
 
 ### 2. train teacher network
 ```bash
-$ python train.py # Defult=vgg16
+$ python train.py 
 ```
-
-Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM).
+Defult is vgg16.
+Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM). Then unzip it to /checkpoint
 
 ### 3. calculate MED matrix
 You need to calculate MED matrix by 
