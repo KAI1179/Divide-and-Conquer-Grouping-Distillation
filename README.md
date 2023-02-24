@@ -20,7 +20,7 @@ I will use cifar100 dataset from torchvision.
 ```bash
 $ python train.py 
 ```
-Defult: vgg16
+% Defult: vgg16
 
 Or you can down our pre-trained model at [here](https://1drv.ms/u/s!At1wX8TPqaH9fxSXr1TjIV4soAw?e=EkYWIM).
 
