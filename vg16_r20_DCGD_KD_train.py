@@ -13,8 +13,6 @@ import argparse
 from resnet_56 import *
 from models import *
 from vg16_r20_model import small_network
-# from _958_1_model import small_network_1
-##！！！！！ 下面的也需要改 save_path = './checkpoint/_xxx_model'
 
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -64,22 +62,6 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer',
 # Model
 print('==> Building model..')
 # net = VGG('VGG16')
-# net = VGG('VGG19')
-# net = ResNet50()
-# net = ResNet18()
-# net = PreActResNet18()
-# net = GoogLeNet()
-# net = DenseNet121()
-# net = ResNeXt29_2x64d()
-# net = MobileNet()
-# net = MobileNetV2()
-# net = DPN92()
-# net = ShuffleNetG2()
-# net = SENet18()
-# net = ShuffleNetV2(1)
-# net = EfficientNetB0()
-# net = RegNetX_200MF()
-# net = SimpleDLA()
 net = small_network()
 net_teacher = VGG('VGG16')
 # net_teacher = resnet56()
@@ -126,7 +108,6 @@ optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5
 
 # scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=40)
-# scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[50, 80, 110], gamma=0.1)
 
 # Training
 def train(epoch):
@@ -210,7 +191,7 @@ def test(epoch):
 
 
 if __name__ == '__main__':
-    for epoch in range(start_epoch, start_epoch+290):
+    for epoch in range(start_epoch, start_epoch+240):
         train(epoch)
         test(epoch)
         scheduler.step()
