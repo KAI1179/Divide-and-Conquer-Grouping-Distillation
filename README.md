@@ -44,10 +44,10 @@ If you use another network (MED matrix), you need to change the file path loaded
 
 ```bash
 # for instance, DCGD+KD method.
-$ python vg16_r20_DCGD_KD_train.py 
+$ python vg16-r20-DCGD-KD-train.py 
 
 # for instance, DCGD+DKD method.
-$ python vg16_r20_DCGD_DKD_train.py 
+$ python vg16-r20-DCGD-DKD-train.py 
 ```
 
 We provide two implementations in the file, ```DCGD+CE``` and ```DCGD+KD```. 
